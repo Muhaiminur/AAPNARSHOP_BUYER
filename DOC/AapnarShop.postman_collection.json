@@ -1,0 +1,1490 @@
+{
+	"info": {
+		"_postman_id": "7ee093a5-d17b-4072-8633-22eacf29f6f9",
+		"name": "AapnarShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "BuyerEnd",
+			"item": [
+				{
+					"name": "SignUp",
+					"item": [
+						{
+							"name": "registration",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"type": "text",
+										"value": "8800000000000"
+									},
+									{
+										"key": "token",
+										"type": "text",
+										"value": "spspoos9akkk"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"via\": \"subha.bhowmik@gtechcp.com\",\r\n    \"otp\": \"26914\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/registration",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pre registration",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "kjliomnahaj",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"via\": \"01765822041\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/pre/registration",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"pre",
+										"registration"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "Gtech$Aapnarshop$",
+								"type": "string"
+							},
+							{
+								"key": "username",
+								"value": "Gtech",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "978efa34-fcdb-4a9c-8483-277cfd751efd",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "74ada574-4cf0-4fc0-a411-18db29ee7ccf",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "SignIn",
+					"item": [
+						{
+							"name": "login",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "d8u8u8u8uuuauau0pliytr",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"via\": \"tawhid.alam@gtechcp.com\",\r\n    \"password\": \"123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/login",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"login"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "Gtech$Aapnarshop$",
+								"type": "string"
+							},
+							{
+								"key": "username",
+								"value": "Gtech",
+								"type": "string"
+							}
+						]
+					},
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Address",
+					"item": [
+						{
+							"name": "get area list",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "koao9292n",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cityId\": \"1\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/general/address/area/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"general",
+										"address",
+										"area",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get buyer address",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "2",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "cjfkdjfkdjkfdjkfj",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"addressId\":\"9\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/address/get",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"address",
+										"get"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update buyer address",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "1",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "dkofd9idf9jf8duf7dy6dfy5d4edrhhf",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"addressId\": \"1\",\r\n    \"areaId\": \"2\",\r\n    \"address\": \"stuisjdishduj\",\r\n    \"receiverName\": \"s7h7sh\",\r\n    \"receiverPhone\": \"sdhsbhd\",\r\n    \"isPrimary\": \"yes\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/address/update",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"address",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get buyer's address list",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "2",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "kdf8ud8fkjkj090922",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/address/get/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"address",
+										"get",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get division list",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "sdjsjkdsjji88jjj",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/general/address/division/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"general",
+										"address",
+										"division",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get city list",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "0kkja7kkjkj",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"districtId\": \"2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/general/address/city/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"general",
+										"address",
+										"city",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get district list",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "e00eoe765unbgbgbg",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"divisionId\": \"2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/general/address/district/list",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"general",
+										"address",
+										"district",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "make an address primary ",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "1",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "76eqapo",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"addressId\":\"5\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/address/make/primary",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"address",
+										"make",
+										"primary"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add address",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "1",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "sjd9s9okoio",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"areaId\":\"1\",\r\n    \"address\":\"738/ywt\",\r\n    \"receiverName\":\"kalim\",\r\n    \"receiverPhone\":\"\",\r\n    \"primary\":\"yes\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/address/add",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"address",
+										"add"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete address",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "1",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "dfjdijfid90975533",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"addressId\":\"2\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/address/delete",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"address",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "Gtech$Aapnarshop$",
+								"type": "string"
+							},
+							{
+								"key": "username",
+								"value": "Gtech",
+								"type": "string"
+							}
+						]
+					},
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Congifuration",
+					"item": [
+						{
+							"name": "get cofig ",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "asjaisuj8auuhyf5341ergfc",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/buyer/get/config",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"get",
+										"config"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "Gtech$Aapnarshop$",
+								"type": "string"
+							},
+							{
+								"key": "username",
+								"value": "Gtech",
+								"type": "string"
+							}
+						]
+					},
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "get buyer profile",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "2",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "sjdshd7sd",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{url}}/buyer/profile",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update buyer profile",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "2",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "124",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"fullName\": \"tee\",\r\n    \"email\": \"tawhid.alam@gtechcp.com\",\r\n    \"phone\": \"123123123123123123123123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/profile/update",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"profile",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "password change",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "1",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "kdjifjdij1qrqewaa",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"currentPassword\":\"abc123\",\r\n    \"newPassword\":\"123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/profile/change/password",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"profile",
+										"change",
+										"password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "retrieve password step 1",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "dfkdjkfjkdjfkdjid98fkdjk",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"via\": \"subha.bhowmik@gtechcp.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/retrieve/password/otp",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"retrieve",
+										"password",
+										"otp"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "retrieve password step 2",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "0wp12zmjaiiiahsg6t6t6E",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"via\": \"subha.bhowmik@gtechcp.com\",\r\n    \"otp\": \"23329\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/retrieve/password/set",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"retrieve",
+										"password",
+										"set"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "Gtech$Aapnarshop$",
+								"type": "string"
+							},
+							{
+								"key": "username",
+								"value": "Gtech",
+								"type": "string"
+							}
+						]
+					},
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "DashBoard Search",
+					"item": [
+						{
+							"name": "search suggestion box ",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "1",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "qwqwqwqwqoiu78902424zzx",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"areaId\": \"1\",\r\n    \"shopName\": \"da\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/dashboard/search/suggestion",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"dashboard",
+										"search",
+										"suggestion"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "Gtech$Aapnarshop$",
+								"type": "string"
+							},
+							{
+								"key": "username",
+								"value": "Gtech",
+								"type": "string"
+							}
+						]
+					},
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PIN Request",
+					"item": [
+						{
+							"name": "buyer pin verification",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "uhuhuhuh0909",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"via\": \"tawhidzgt@gmail.com\",\r\n    \"otp\": \"56923\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/pin/verification",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"pin",
+										"verification"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "buyer pin request",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "Gtech$Aapnarshop$",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Gtech",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "userId",
+										"value": "8800000000000",
+										"type": "text"
+									},
+									{
+										"key": "token",
+										"value": "ia9is9aj9uj",
+										"type": "text"
+									},
+									{
+										"key": "Language",
+										"value": "EN",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"via\": \"tawhidzgt@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/buyer/pin/request",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"buyer",
+										"pin",
+										"request"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "basic",
+						"basic": [
+							{
+								"key": "password",
+								"value": "Gtech$Aapnarshop$",
+								"type": "string"
+							},
+							{
+								"key": "username",
+								"value": "Gtech",
+								"type": "string"
+							}
+						]
+					},
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"auth": {
+				"type": "basic",
+				"basic": [
+					{
+						"key": "password",
+						"value": "Gtech$Aapnarshop$",
+						"type": "string"
+					},
+					{
+						"key": "username",
+						"value": "Gtech",
+						"type": "string"
+					}
+				]
+			},
+			"protocolProfileBehavior": {}
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "Gtech$Aapnarshop$",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "Gtech",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}

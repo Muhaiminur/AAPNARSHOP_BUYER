@@ -1,0 +1,39 @@
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-child"><h2><span [innerHTML]="_about | async"></span></h2>
+                <div class="linker"><a routerLink="/about" routerLinkActive="active"><span [innerHTML]="_aboutus | async"></span></a></div>
+                <div class="linker"><a routerLink="/delivery" routerLinkActive="active"><span [innerHTML]="_delivery | async"></span></a></div>
+                <div class="linker"><a routerLink="/exchange" routerLinkActive="active"><span [innerHTML]="_exchange | async"></span></a></div>
+                <div class="linker"><a routerLink="/privacy" routerLinkActive="active"><span [innerHTML]="_privacy | async"></span></a></div>
+            </div>
+        
+            <div class="footer-child"><h2><span [innerHTML]="_info | async"></span></h2>
+                <div class="linker"><span [innerHTML]="_sizeguide | async"></span></div>
+                <div class="linker"><span [innerHTML]="_storelocator | async"></span></div>
+            </div>
+        
+            <div class="footer-child"><h2><span [innerHTML]="_customersupport | async"></span></h2>
+                <div class="linker"><a href="tel:+8801923853388"><span [innerHTML]="_phone | async"></span></a></div>
+                <div class="linker"><span [innerHTML]="_timing | async"></span></div>
+                <div class="linker"><span [innerHTML]="_headofcadd | async"></span></div>
+                <div class="linker"><span [innerHTML]="_corofcadd | async"></span></div>
+            </div>  
+            
+            <div class="footer-child"><h2><span [innerHTML]="_followus | async"></span></h2>
+                <!-- <div class="footer-icons" align="right">
+                    <mat-icon svgIcon="instagram"></mat-icon>
+                    <mat-icon svgIcon="facebook"></mat-icon>
+                    <mat-icon svgIcon="twitter"></mat-icon>
+                    <mat-icon svgIcon="whatsapp"></mat-icon>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <p style="clear: both;"><span [innerHTML]="_copyright | async"></span></p>
+    </div>
+</footer>
+

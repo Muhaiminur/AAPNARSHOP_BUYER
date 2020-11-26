@@ -1,0 +1,62 @@
+<!-- https://medium.com/javascript-in-plain-english/create-a-responsive-toolbar-in-angular-using-flex-layout-c6d83ff8258e -->
+
+<!-- Blank Space -->
+<div class="header"></div>
+
+<!-- Main Header -->
+<header class="floatingToolbar" [ngClass]="{'mat-elevation-z5' : true, 'sticky' : isSticky}">
+    <mat-toolbar fxLayout="row" color="primary">
+        <span class="menu-spacer" fxFlex>
+            <a href="#">
+                <img src="/assets/logo/500x150.png" style="width: 150px;">
+            </a>
+        </span>
+        
+        <button mat-button (click)="langToggle()">{{currentLang}}</button>
+
+        <!-- 
+        <button mat-button *ngFor="let item of menuItems"
+            routerLink={{item.routing}}
+            routerLinkActive="active"
+            [fxShow]="item.showOnDesktop" 
+            [fxShow.xs]="item.showOnMobile"
+            [fxShow.sm]="item.showOnTablet">
+                <mat-icon *ngIf="item.icon" class="mr">{{item.icon}}</mat-icon>
+            {{item.label}}
+        </button>
+        -->
+        <!-- <mat-divider [vertical]="true" style="height:60px"></mat-divider> -->
+
+        <ng-container>
+            <button *ngIf="isLogged" mat-button [matMenuTriggerFor]="dropMenu">
+                <mat-icon>menu</mat-icon></button>
+
+            <button *ngIf="!isLogged" mat-button (click)="openDialog()">
+                <mat-icon>lock</mat-icon></button>
+
+            <!-- <mat-divider [vertical]="true" style="height:60px"></mat-divider> -->
+
+            <mat-icon matBadge="0" matBadgeColor="warn" style="margin: 0 0 0 20px;">shopping_cart</mat-icon>
+
+            <mat-menu #dropMenu="matMenu">
+                <ng-container *ngFor="let item of menuItems">
+                    <div [fxShow]="!item.showOnDesktop" 
+                        [fxShow.sm]="!item.showOnTablet" 
+                        [fxShow.xs]="!item.showOnMobile">
+                        <button 
+                            mat-menu-item 
+                            routerLink={{item.routing}} 
+                            routerLinkActive="active"
+                            matBadge={{item.badge}}
+                            matBadgePosition="above after"
+                            matBadgeColor="warn">
+                            <mat-icon class="mr">{{item.icon}}</mat-icon>
+                            {{item.label}}
+                        </button>
+                        <mat-divider></mat-divider>
+                    </div>
+                </ng-container>
+            </mat-menu>
+        </ng-container>
+    </mat-toolbar>
+</header>

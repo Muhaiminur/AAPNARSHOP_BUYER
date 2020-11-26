@@ -1,0 +1,39 @@
+<div class="login-container">
+    <div class="login-picture" fxHide fxShow.gt-sm>
+        <img width="100%" src='assets/images/arecibo.jpg' />
+    </div>
+    
+    <div class="login-box">
+        <div class="login-box-top">
+            <div class="logo">Logo comes here</div>
+            <div class="login-form">
+                <!-- <mat-card> -->
+                    <form>
+                        <mat-form-field class="login-full-width" color="accent">
+                            <mat-label>Phone Number/Email</mat-label>
+                            <input matInput type="text" placeholder="Phone Number/Email">
+                        </mat-form-field>
+                        <mat-form-field class="login-full-width" color="accent">
+                            <mat-label>Password</mat-label>
+                            <input matInput type="password" placeholder="Password">
+                        </mat-form-field>
+                        <button mat-raised-button type="submit"><span [innerHTML]="_signin | async"></span></button>
+                    </form>
+                <!-- </mat-card> -->
+            </div>
+        </div>
+
+        <div class="login-box-below">
+            <div>Or Signin With</div>
+            <div>
+                <mat-icon svgIcon="google"></mat-icon>
+                <mat-icon svgIcon="facebook-round"></mat-icon>
+            </div>
+            <div>Do you have any shop?</div>
+            <div>Sell your product in your own area oline?</div>
+            <div>Register for online shop</div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<!-- https://stackoverflow.com/questions/40788458/how-to-call-component-method-from-service-angular2 -->
+
+<!-- <section>
+    <div class="filter-button-row">
+        <div class="filter-flex-container">
+            <div class="filter-button-container">
+                <button mat-raised-button color="primary">Rating</button>
+            </div>
+            <div class="filter-button-container">
+                <button mat-raised-button color="primary">Offer</button>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+</section> -->
+
+<p (click)="$event.stopPropagation();">
+    <mat-button-toggle-group multiple="true" name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="rating">Rating</mat-button-toggle>
+      <mat-button-toggle value="offer">Offer</mat-button-toggle>
+    </mat-button-toggle-group>
+</p>
+<mat-divider></mat-divider>
+
+<div (click)="$event.stopPropagation();">
+    <mat-selection-list #shoes>
+        <mat-list-option *ngFor="let shoe of typesOfShoes">
+        {{shoe}}
+        </mat-list-option>
+    </mat-selection-list>
+</div>
+<mat-divider></mat-divider>
+
+<div class="filter-button-row">
+    <div class="filter-flex-container">
+        <div class="filter-button-container">
+            <button mat-raised-button color="primary">Apply</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- (click)="$event.stopPropagation();" used for not closing menu while selecting options-->

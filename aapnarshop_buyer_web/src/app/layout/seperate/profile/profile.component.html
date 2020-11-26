@@ -1,0 +1,102 @@
+<div class="block">
+    <div class="circle"><mat-icon>add_a_photo</mat-icon></div>
+</div>
+
+<div class="block">
+    <form class="profile-form">
+        <!-- <mat-card> -->
+        <p>
+            <mat-form-field class="profile-full-width" color="accent">
+                <mat-label>Username</mat-label>
+                <!-- <label>Username</label> -->
+                <input matInput type="text" name="username">
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field class="profile-full-width" color="accent">
+                <mat-label>Mobile</mat-label>
+                <input matInput type="tel" name="mobile">
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field class="profile-full-width" color="accent">
+                <mat-label>City</mat-label>
+                <mat-select>
+                <mat-option>None</mat-option>
+                <mat-option value="option1">Option 1</mat-option>
+                <mat-option value="option2">Option 2</mat-option>
+                <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field class="profile-full-width" color="accent">
+                <mat-label>Area</mat-label>
+                <mat-select>
+                <mat-option>None</mat-option>
+                <mat-option value="option1">Option 1</mat-option>
+                <mat-option value="option2">Option 2</mat-option>
+                <mat-option value="option3">Option 3</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field class="profile-full-width" color="accent">
+                <mat-label>Address</mat-label>
+                <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-label>Select as primary address</mat-label>
+            <mat-slide-toggle>Slide me!</mat-slide-toggle>
+        </p>
+
+        <p align="center">
+            <button mat-raised-button type="submit">জমা দিন</button>
+        </p>
+    <!-- </mat-card> -->
+    </form>
+</div>
+
+<div class="block"><b>Select another address</b></div>
+<div class="block">
+    <mat-card class="profile-address-card">
+        <mat-card-header>
+            <div mat-card-avatar><mat-icon>check_circle</mat-icon></div>
+            <mat-card-title>Home Address </mat-card-title>
+            <mat-card-subtitle>Mobile 01711080468</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+              House 124, Road 2, Purba Merul Model Town, Badda, Dhaka 1212
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>Edit</button>
+            <button mat-button>Save</button>
+          </mat-card-actions>
+    </mat-card>
+</div>
+
+<div class="block">
+    <mat-card class="profile-address-card">
+        <mat-card-header>
+            <!-- <div mat-card-avatar><mat-icon>store</mat-icon></div> -->
+            <mat-card-title>Office Address</mat-card-title>
+            <mat-card-subtitle>Mobile 01711080468</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+              House 16, Road 30, Gulshan 1, Dhaka 1212
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button>Edit</button>
+            <button mat-button>Save</button>
+          </mat-card-actions>
+    </mat-card>
+</div>

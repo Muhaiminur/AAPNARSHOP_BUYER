@@ -1,0 +1,99 @@
+//https://www.youtube.com/watch?v=EBnTZwr0RSs&feature=youtu.be
+//For creating own palette like $mat_green | $mat_pink, http://mcg.mbitson.com/#!?mcgpalette0=%233f51b5
+
+@import '~@angular/material/theming';
+@include mat-core();
+
+/* Predefined Color Palette */
+//$eshops-primary: mat-palette($mat-green);
+//$eshops-accent: mat-palette($mat-pink, A200, A100, A400);
+
+/* Own Color Palette */
+$mat-eshops-light: (
+    50 : #fdfdfd,
+    100 : #fbfbfb,
+    200 : #f8f8f8,
+    300 : #f5f5f5,
+    400 : #f2f2f2,
+    500 : #ffffff,
+    600 : #eeeeee,
+    700 : #ececec,
+    800 : #e9e9e9,
+    900 : #e5e5e5,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-eshops-dark: (
+  50 : #e0e0e0,
+  100 : #b3b3b3,
+  200 : #808080,
+  300 : #4d4d4d,
+  400 : #262626,
+  500 : #393738,
+  600 : #000000,
+  700 : #000000,
+  800 : #000000,
+  900 : #000000,
+  A100 : #a6a6a6,
+  A200 : #8c8c8c,
+  A400 : #737373,
+  A700 : #666666,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #ffffff,
+      400 : #ffffff,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #ffffff,
+      A700 : #ffffff,
+  )
+);
+
+//Custom
+$primary: mat-palette($mat-eshops-light);
+$accent: mat-palette($mat-eshops-dark);
+
+//Present 
+//$primary: mat-palette($mat-indigo);
+//$accent: mat-palette($mat-pink, A200, A100, A400);
+
+$warn: mat-palette($mat-red);
+
+$theme: mat-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent,
+    warn: $warn,
+  )
+));
+@include angular-material-theme($theme);
+
+//Include theme styles for your custom components.
+@import './footer-theme.scss';
+@include eshops-footer-theme($theme);

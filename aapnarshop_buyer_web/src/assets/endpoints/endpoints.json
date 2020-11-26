@@ -1,0 +1,10 @@
+{ 
+    "registration_sendotp": "buyer/pre/registration",
+    "registration_checkotp": "buyer/registration",
+    "login":"buyer/login",
+    "profile":"buyer/profile",
+    "listdivision": "buyer/address/division/list",
+    "listdistrict": "buyer/address/district/list",
+    "listcity": "buyer/address/city/list",
+    "listarea": "buyer/address/area/list"
+}

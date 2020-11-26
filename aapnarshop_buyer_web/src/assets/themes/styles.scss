@@ -1,0 +1,17 @@
+@import './eshops-theme'; 
+
+@import './../font/font.min.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+    margin: 0;
+}
+
+.footer-container {
+    color: mat-color($primary);
+    background-color: mat-color($accent);
+    // Get a relative color for a hue ('lighter' or 'darker')
+    //outline-color: mat-color($accent, darker);
+    // Get a contrast color for a hue by adding `-contrast` to any other key.
+    //border-color: mat-color($primary, '100-contrast');
+}

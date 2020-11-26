@@ -1,0 +1,23 @@
+.header {
+    height: 64px;
+    width: 100%;
+}
+
+.floatingToolbar {
+    position: fixed;
+    background: #eee;
+    width: 100%;
+    top: 0;
+    height: 0;
+    opacity: 1;
+    transition: opacity .25s ease-out, height .15s ease;
+    cursor: default;
+    user-select: none;
+}
+  
+.sticky {
+    height: 64px;
+    opacity: 1;
+    transition: opacity .25s ease-out, height .15s ease;
+    z-index: 100;
+}

@@ -1,0 +1,100 @@
+<div class="signer-close">
+    <mat-icon aria-hidden="false" aria-label="Close Signer" mat-dialog-close>close</mat-icon>
+</div>
+
+<div class="signer-logo-container"></div>
+
+<mat-tab-group>
+    <!-- Signin -->
+    <mat-tab><ng-template mat-tab-label><span [innerHTML]="_signin | async"></span></ng-template> 
+        <form [formGroup]="signinForm" (ngSubmit)="signinFormSubmit()" novalidate>
+            <div class="signer-container">
+                <div class="signer-box">
+                    <mat-form-field class="signer-full-width" color="accent">
+                        <mat-label><span [innerHTML]="_phoneoremail | async"></span></mat-label>
+                        <input matInput 
+                            type="text" 
+                            name="usernameSigninForm"
+                            [formControl]="usernameSigninFormControl" 
+                            placeholder="Phone Number/Email">
+                            <mat-error *ngIf="usernameSigninFormControl.hasError('required')">
+                                <strong><span [innerHTML]="_required | async"></span></strong>
+                            </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="signer-full-width" color="accent">
+                        <mat-label><span [innerHTML]="_password | async"></span></mat-label>
+                        <input matInput 
+                            [type]="hide ? 'password' : 'text'"
+                            name="password"
+                            [formControl]="passwordSigninFormControl" 
+                            placeholder="Password">
+                            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                            <mat-error *ngIf="passwordSigninFormControl.hasError('required')">
+                                <strong><span [innerHTML]="_required | async"></span></strong>
+                            </mat-error>
+                    </mat-form-field>
+                    <button mat-raised-button type="submit">
+                        <span [innerHTML]="_signin | async"></span>
+                    </button>
+                    <!-- Blank Span-->
+                    <span style="margin: 20px; align-items: right;"></span>
+                </div>
+            </div>
+        </form>
+    </mat-tab>
+    
+    <!-- Signup -->
+    <mat-tab><ng-template mat-tab-label><span [innerHTML]="_signup | async"></span></ng-template>
+        <form [formGroup]="regForm" (ngSubmit)="regFormSubmit()" novalidate>
+            <div class="signer-container">
+                <div class="signer-box">
+                    <mat-form-field class="signer-full-width" color="accent">
+                        <mat-label><span [innerHTML]="_phoneoremail | async"></span></mat-label>
+                        <input matInput 
+                            type="text" 
+                            name="username"
+                            [formControl]="usernameRegFormControl" 
+                            placeholder="Phone Number/Email">
+                            <button mat-icon-button matSuffix (click)="sendUserName()">
+                                <mat-icon>send</mat-icon>
+                            </button>
+                            <mat-error *ngIf="usernameRegFormControl.hasError('pattern') && !usernameRegFormControl.hasError('required')">
+                                অনুগ্রহ করে সঠিক মোবাইল নম্বরটি দিন
+                            </mat-error>
+                            <mat-error *ngIf="usernameRegFormControl.hasError('required')">
+                                <strong><span [innerHTML]="_required | async"></span></strong>
+                            </mat-error>
+                    </mat-form-field>
+
+                    <ng-container *ngIf="show">
+                        <mat-form-field class="signer-full-width" color="accent">
+                            <mat-label><span [innerHTML]="_otp | async"></span></mat-label>
+                            <input matInput 
+                                [type]="hide ? 'password' : 'text'"
+                                name="otp"
+                                [formControl]="otpRegFormControl" 
+                                placeholder="Password">
+                                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                                </button>
+                                <mat-error *ngIf="otpRegFormControl.hasError('required')">
+                                    <strong><span [innerHTML]="_required | async"></span></strong>
+                                </mat-error>
+                        </mat-form-field>
+                        <button mat-raised-button type="submit">
+                            <span [innerHTML]="_signup | async"></span>
+                        </button>
+                        <!-- Blank Span-->
+                        <span style="margin: 20px; align-items: right;"></span>
+                    </ng-container>
+                </div>
+            </div>
+        </form>
+    </mat-tab>
+</mat-tab-group>
+
+<div class="signer-box-below">
+    <div>By Consuming, you are agreed to blal blah </div>
+</div>

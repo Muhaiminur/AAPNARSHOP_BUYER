@@ -1,0 +1,37 @@
+@import '~@angular/material/theming';
+
+/* Extracting Colors */
+@mixin eshops-footer-color($eshops-theme) {
+    $config: mat-get-color-config($eshops-theme);
+    $primary: map-get($config, primary);
+    $accent: map-get($config, accent);
+    .eshops-footer {
+      background-color: mat-color($config);
+      border-color: mat-color($config, A400);
+    }
+}
+
+/* Extracting typography */
+/* Details, https://material.angular.io/guide/typography */
+@mixin eshops-footer-typography($eshops-theme) {
+    $config: mat-get-typography-config($eshops-theme);
+    .eshops-footer {
+      font: {
+        family: mat-font-family($config, body-1);
+        size: mat-font-size($config, body-1);
+        weight: mat-font-weight($config, body-1);
+      }
+    }
+}
+
+/* accepts an Angular Material theme, and delegates to the individual theming */
+@mixin eshops-footer-theme($eshops-theme) {
+    $color: mat-get-color-config($eshops-theme);
+    $typography: mat-get-typography-config($eshops-theme);
+    @if $color != null {
+      @include eshops-footer-color($color); 
+    }
+    @if $typography != null {
+      @include eshops-footer-typography($typography);
+    }
+}

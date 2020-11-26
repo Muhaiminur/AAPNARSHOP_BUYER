@@ -1,0 +1,25 @@
+<app-header></app-header>
+<mat-tab-group color="accent"
+    mat-align-tabs="center" 
+    [dynamicHeight]="true" 
+    [selectedIndex]=[(matTabIndex)] 
+    (selectedTabChange)="newMatIndex($event)">
+    
+    <mat-tab label="Settings">
+        <app-settings></app-settings>
+    </mat-tab>
+
+    <mat-tab label="Order History">
+        <app-history></app-history>
+    </mat-tab>
+    
+    <mat-tab label="Notification">
+        <app-notice></app-notice>
+    </mat-tab>
+    
+    <mat-tab label="Profile">
+        <app-profile></app-profile>
+    </mat-tab>
+</mat-tab-group>
+
+  

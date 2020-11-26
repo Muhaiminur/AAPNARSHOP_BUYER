@@ -1,0 +1,42 @@
+.signer-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.signer-close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.signer-logo-container {
+    background: url('/assets/logo/500x500.png') no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+
+.signer-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.signer-box-below {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.signer-full-width {
+    width: 100%;
+}
